@@ -9,7 +9,7 @@ git clone https://github.com/Wamitinewton/secure_sec.git
 ```
 * navigate to the package root folder
 ``` bash
-cd secure_sec
+cd your/projects/folder/secure_sec
 ```
 * open in code or android studio
 * get all the dependencies
