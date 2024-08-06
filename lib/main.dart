@@ -85,7 +85,9 @@ class _MyAppState extends State<MyApp> {
       _accountNameController.text.isEmpty ? null : _accountNameController.text;
 
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
         appBar: AppBar(
           title: const Text('Secure sec tutorial'),
           actions: <Widget>[
@@ -184,7 +186,10 @@ class _MyAppState extends State<MyApp> {
             ),
           ],
         ),
-      );
+      ),
+    );
+  }
+
   Future<void> _perfomAction(
       _ItemActions action, _SecItem item, BuildContext context) async {
     switch (action) {
